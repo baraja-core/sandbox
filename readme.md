@@ -14,7 +14,7 @@ It is also fully configured and also prepared to support the use of [Doctrine](h
 
 Installation
 ------------
-To install the sandbox you should use Composer. To do so, find your web root directory (e.g. /var/www or C:\InetPub) in your command line and execute the following command:
+To install the sandbox you should use Composer. To do so, find your web root directory (e.g. `/var/www` or `C:\InetPub`) in your command line and execute the following command:
 
 `composer create-project baraja/sandbox <your-project-name>`
 
