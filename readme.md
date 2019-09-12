@@ -5,11 +5,8 @@ It is designed to be the most usable and friendliest as possible. It focuses
 on security and performance and is definitely one of the safest PHP frameworks.
 
 This is an upgraded version of the the basic Nette Sandbox that you can use as the starting point for your new applications.
-The PROs of this Sandbox is that is featuring the [PackageManager](https://github.com/baraja-core/package-manager) a great tool that allows you to search all the package dependencies automatically and register them to your project.
-It is also fully configured and also prepared to support the use of [Doctrine](https://github.com/baraja-core/doctrine) which is a simple and easy to use, maximal performance database layer.
-
-
-
+The PROs of this Sandbox is that is featuring the [PackageManager](https://github.com/baraja-core/package-manager), a great tool that allows you to search all the package dependencies automatically and register them to your project.
+It is also fully configured and prepared to support the use of [Doctrine](https://github.com/baraja-core/doctrine) which is a simple and easy to use, maximal performance database layer.
 
 
 Installation
