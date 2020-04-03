@@ -10,3 +10,5 @@ parameters:
 	excludes_analyse:
 		- vendor/*
 		- temp/*
+	autoload_directories:
+		- app
