@@ -58,7 +58,7 @@
 	"scripts": {
 		"post-autoload-dump": "Baraja\\PackageManager\\PackageRegistrator::composerPostAutoloadDump",
 		"phpstan": [
-			"vendor/bin/phpstan analyse src -c phpstan.neon --level 6 --no-progress"
+			"vendor/bin/phpstan analyse app -c phpstan.neon --level 6 --no-progress"
 		]
 	},
 	"minimum-stability": "stable",
