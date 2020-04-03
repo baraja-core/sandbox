@@ -46,7 +46,10 @@
 		"ext-PDO": "*"
 	},
 	"require-dev": {
-		"nette/tester": "^2.0"
+		"phpstan/phpstan": "^0.12.18",
+		"nette/tester": "^2.0",
+		"tracy/tracy": "^2.7",
+		"phpstan/phpstan-nette": "^0.12.6"
 	},
 	"autoload": {
 		"classmap": [
@@ -54,7 +57,10 @@
 		]
 	},
 	"scripts": {
-		"post-autoload-dump": "Baraja\\PackageManager\\PackageRegistrator::composerPostAutoloadDump"
+		"post-autoload-dump": "Baraja\\PackageManager\\PackageRegistrator::composerPostAutoloadDump",
+		"phpstan": [
+			"vendor/bin/phpstan analyse src -c phpstan.neon --level 6 --no-progress"
+		]
 	},
 	"minimum-stability": "stable",
 	"config": {
