@@ -4,3 +4,9 @@ includes:
 
 parameters:
 	checkGenericClassInNonGenericObjectType: false
+	paths:
+		- app
+	autoload_directories:
+		- vendor
+	excludes_analyse:
+		- vendor/*
