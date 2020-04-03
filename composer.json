@@ -38,7 +38,7 @@
 		"nette/utils": "^3.0",
 		"latte/latte": "^2.5",
 		"tracy/tracy": "^2.6",
-		"baraja-core/package-manager": "~1.0",
+		"baraja-core/package-manager": "~2.0",
 		"ext-tokenizer": "*",
 		"ext-iconv": "*",
 		"ext-json": "*",

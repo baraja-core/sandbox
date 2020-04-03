@@ -17,18 +17,17 @@ use Tracy\ILogger;
 
 final class ErrorPresenter implements IPresenter
 {
-
 	use SmartObject;
 
-	/**
-	 * @var ILogger
-	 */
+	/** @var ILogger */
 	private $logger;
+
 
 	public function __construct(ILogger $logger)
 	{
 		$this->logger = $logger;
 	}
+
 
 	/**
 	 * @param Request $request
@@ -54,5 +53,4 @@ final class ErrorPresenter implements IPresenter
 			}
 		});
 	}
-
 }

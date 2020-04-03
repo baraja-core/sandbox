@@ -10,7 +10,6 @@ use Nette\Configurator;
 
 class Bootstrap
 {
-
 	public static function boot(): Configurator
 	{
 		$configurator = new Configurator;
@@ -28,20 +27,16 @@ class Bootstrap
 			->addDirectory(__DIR__)
 			->register();
 
-		$packageRegistrator = new PackageRegistrator(
-			__DIR__ . '/../',
-			__DIR__ . '/../temp'
-		);
+		new PackageRegistrator(__DIR__ . '/../', __DIR__ . '/../temp');
 
 		$configurator
 			->addConfig(__DIR__ . '/config/package.neon')
 			->addConfig(__DIR__ . '/config/common.neon')
 			->addConfig(__DIR__ . '/config/local.neon');
 
-		$packageRegistrator->runAfterActions($configurator);
-
 		return $configurator;
 	}
+
 
 	public static function bootForTests(): Configurator
 	{
@@ -50,5 +45,4 @@ class Bootstrap
 
 		return $configurator;
 	}
-
 }
