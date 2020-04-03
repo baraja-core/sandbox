@@ -6,7 +6,13 @@ parameters:
 	checkGenericClassInNonGenericObjectType: false
 	paths:
 		- app
+		- www
 	autoload_directories:
+		- app
+		- www
 		- vendor
+		- temp
 	excludes_analyse:
 		- vendor/*
+		- temp/*
+
