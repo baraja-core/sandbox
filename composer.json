@@ -38,7 +38,7 @@
 		"nette/utils": "^3.0",
 		"latte/latte": "^2.5",
 		"tracy/tracy": "^2.6",
-		"baraja-core/package-manager": "^2.0",
+		"baraja-core/package-manager": "^2.5",
 		"ext-tokenizer": "*",
 		"ext-iconv": "*",
 		"ext-json": "*",
@@ -64,7 +64,7 @@
 	"minimum-stability": "stable",
 	"config": {
 		"platform": {
-			"php": "7.2.20"
+			"php": "7.4.0"
 		}
 	}
 }
