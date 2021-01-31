@@ -17,7 +17,7 @@ To install the sandbox you should use Composer. To do so, find your web root dir
 `composer create-project baraja/sandbox <your-project-name>`
 
 The sandbox will be downloaded into your newly created directory.
-	
+
 If you're developing on Mac OS X or Linux (or any other Unix based system), you need to configure write privileges to the web server.
 So in the terminal write:
 

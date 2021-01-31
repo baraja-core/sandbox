@@ -12,9 +12,6 @@ final class RouterFactory
 {
 	use StaticClass;
 
-	/**
-	 * @return RouteList
-	 */
 	public static function createRouter(): RouteList
 	{
 		$router = new RouteList;
@@ -24,9 +21,6 @@ final class RouterFactory
 	}
 
 
-	/**
-	 * @return RouteList
-	 */
 	public static function createFrontRouter(): RouteList
 	{
 		$router = new RouteList('Front');
