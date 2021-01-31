@@ -27,4 +27,4 @@ jobs:
           coverage: none
 
       - run: composer create-project nette/coding-standard temp/coding-standard ^3 --no-progress --ignore-platform-reqs
-      - run: php temp/coding-standard/ecs check src
+      - run: php temp/coding-standard/ecs check app
