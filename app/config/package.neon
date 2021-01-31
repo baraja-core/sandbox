@@ -1,7 +1,3 @@
-parameters:
-	packageRegistrator:
-		customPackagesNamePatterns:
-			- ^baraja-
-
-tracy:
-	showLocation: true
+extensions:
+	packageManagerExtension: Baraja\PackageManager\PackageManagerExtension
+	console: Baraja\Console\ConsoleExtension

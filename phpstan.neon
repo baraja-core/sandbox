@@ -7,8 +7,3 @@ includes:
 
 parameters:
 	checkGenericClassInNonGenericObjectType: false
-	excludes_analyse:
-		- vendor/*
-		- temp/*
-	autoload_directories:
-		- app
