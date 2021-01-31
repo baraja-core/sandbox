@@ -42,6 +42,7 @@
 		"ext-PDO": "*"
 	},
 	"require-dev": {
+		"nette/tester": "^2.3",
 		"phpstan/phpstan": "^0.12.18",
 		"phpstan/phpstan-nette": "^0.12.6",
 		"spaze/phpstan-disallowed-calls": "^1.1",
