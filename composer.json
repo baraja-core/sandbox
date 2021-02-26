@@ -19,7 +19,7 @@
 		}
 	],
 	"require": {
-		"php": ">=7.4",
+		"php": "^8.0 <8.1",
 		"nette/application": "^3.0",
 		"nette/bootstrap": "^3.0",
 		"nette/caching": "^3.1",
@@ -62,7 +62,7 @@
 	"minimum-stability": "stable",
 	"config": {
 		"platform": {
-			"php": "7.4.0"
+			"php": "8.0.0"
 		}
 	}
 }
