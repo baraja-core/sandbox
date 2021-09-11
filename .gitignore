@@ -1,3 +1,4 @@
+.idea
 .idea/*
 .vscode/*
 log/*
@@ -8,6 +9,7 @@ temp/*
 app/config/local.neon
 www/_cache/*
 www/static
+vendor
 node_modules/*
 .DS_Store
 .DS_*
