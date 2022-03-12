@@ -34,3 +34,6 @@ jobs:
 
     - name: Check PHPStan rules
       run: composer phpstan
+
+    - name: CLI booting
+      run: php www/index.php
