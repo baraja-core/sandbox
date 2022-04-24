@@ -8,19 +8,15 @@ namespace App\Presenters;
 use Nette\Application\BadRequestException;
 use Nette\Application\Helpers;
 use Nette\Application\IPresenter;
-use Nette\Application\IResponse;
 use Nette\Application\Request;
+use Nette\Application\Response;
 use Nette\Application\Responses;
 use Nette\Http;
-use Nette\SmartObject;
 use Tracy\ILogger;
 
 final class ErrorPresenter implements IPresenter
 {
-	use SmartObject;
-
-	/** @var ILogger */
-	private $logger;
+	private ILogger $logger;
 
 
 	public function __construct(ILogger $logger)
@@ -29,7 +25,7 @@ final class ErrorPresenter implements IPresenter
 	}
 
 
-	public function run(Request $request): IResponse
+	public function run(Request $request): Response
 	{
 		$e = $request->getParameter('exception');
 
@@ -44,7 +40,7 @@ final class ErrorPresenter implements IPresenter
 		$this->logger->log($e, ILogger::EXCEPTION);
 
 		return new Responses\CallbackResponse(function (Http\IRequest $httpRequest, Http\IResponse $httpResponse): void {
-			if (preg_match('#^text/html(?:;|$)#', (string) $httpResponse->getHeader('Content-Type'))) {
+			if (preg_match('#^text/html(?:;|$)#', (string) $httpResponse->getHeader('Content-Type')) === 1) {
 				require __DIR__ . '/templates/Error/500.phtml';
 			}
 		});
