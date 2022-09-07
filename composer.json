@@ -32,7 +32,7 @@
 		"nette/safe-stream": "^2.4",
 		"nette/security": "^3.0",
 		"nette/utils": "^3.0",
-		"latte/latte": "^2.5",
+		"latte/latte": "^3.0",
 		"tracy/tracy": "^2.7",
 		"baraja-core/package-manager": "^3.0",
 		"ext-tokenizer": "*",
