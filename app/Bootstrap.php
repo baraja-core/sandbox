@@ -36,13 +36,4 @@ class Bootstrap
 
 		return $configurator;
 	}
-
-
-	public static function bootForTests(): Configurator
-	{
-		$configurator = self::boot();
-		\Tester\Environment::setup();
-
-		return $configurator;
-	}
 }
