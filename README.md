@@ -56,4 +56,4 @@ Other sources
 
 Other manuals and more you can read on [Czech PHP Manual](https://php.baraja.cz) by [Baraja](https://baraja.cz).
 
-This sandbox is also fully compatible with [Vue framework](https://vue.baraja.cz) and [Structured API](https://github.com/baraja-core/structured-api).
+This sandbox is also fully compatible with Nette and [Structured API](https://github.com/baraja-core/structured-api).
